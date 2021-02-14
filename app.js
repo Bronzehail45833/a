@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const name = urlParams.get('name');
-document.querySelectorAll('title')[0].innerHTML = `${name} | SweatyStats`
+document.querySelectorAll('title')[0].innerHTML = `${name} | Seapickle`
 const navs = document.querySelectorAll(".nav-item");
 const key = 'd5db2401-3d43-4ece-a681-a013df180a3c';
 
