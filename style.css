@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --primary-color: #3DE310;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: #333;
+  
+  height: 10vh;
+  overflow-y: hidden;
+}
+
+
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+a:hover {
+  border-bottom: 2px solid #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
+
+.main img {
+  z-index: -1;
+  height: 100%;
+  
+}
+
+.main .container {
+  position: absolute;
+  top: 0%;
+  color: white;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  animation: animation1;
+  animation-duration: 1.5s;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
+
+@keyframes animation1 {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+.showcase-form {
+  border: 5px var(--primary-color) solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.showcase-form h2 {
+  color: white;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 0;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+  border-radius: 5px;
+}
+
+button:focus {
+ outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(.9);
+  transition: 2s;
+}
+
+footer {
+  height: 5vh;
+  background-color: var(--primary-color);
+}
+
+
+footer .container p {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+
+#data .grid {
+  grid-template-columns: 1fr 3fr;
+  
+}
+
+#data .container .navigation {
+  background-color: white;
+  height: 80%;
+  color: black;
+  border: 10px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#data .container .navigation ul {
+  height: 100%;
+  display: grid;
+  
+  align-items: center;
+  
+  
+}
+
+.navigation ul li {
+  border:lightgray solid;
+  border-width: 1px 0px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.navigation ul li:hover {
+  border:#333 solid;
+  border-width: 1px 0px;
+  cursor: pointer;
+  
+}
+
+.navigation ul li {
+  border:lightgray solid;
+  border-width: 1px 0px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+#data .container .stats {
+  background-color: white;
+  height: 80%;
+  color: black;
+  border: 10px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#Network h1, #Network h2, #Network h3, #Network h4 {
+  padding: 10px;
+  color: black;
+  font-weight: 900;
+}
+
+#Network span {
+  font-weight: normal;
+  color: #333;
+}
+
+.stats {
+  overflow-y: scroll;
+  display: none;
+  animation: animation1;
+  animation-duration: 2s;
+}
+
+.stats table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+  
+}
+
+.stats table thead tr {
+  background-color: var(--primary-color);
+  text-align: left;
+  font-weight: bold;
+}
+
+.stats table th,
+.stats table td {
+  padding: 12px 15px;
+}
+
+.stats table tr {
+  border-bottom: 1px solid lightgray;
+}
+
+.stats h1, .stats h2, .stats h3, .stats h4 {
+  padding: 10px;
+  color: black;
+  font-weight: 900;
+}
+
+.stats span {
+  font-weight: normal;
+  color: #333;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.stats button {
+  margin: 10px;
+  width: 40%;
+}
+
+#about .grid {
+  grid-template-columns: 100%;
+}
+
+#about .container .about {
+  background-color: white;
+  height: 80%;
+  
+  color: black;
+  border: 10px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.about h1, .about h2, .about h3, .about h4 {
+  padding: 10px;
+  color: black;
+  font-weight: 900;
+}
+
+table {
+  margin-bottom: 15px;
+}
